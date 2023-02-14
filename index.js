@@ -35,8 +35,7 @@ const User = require('./models');
 //  logging: false
 //})
 
-// TOKEN ADD
-const token = 'TOKEN'
+const token = '5579772730:AAGqlcg5oy9bfCQC5cSQt4PztKtHljSonoU'
 
 const bot = new TelegramApi(token, {polling: true})
 
@@ -56,7 +55,6 @@ const startGame = async (chatId) => {
 
 const start = async () => {
 
-<<<<<<< HEAD
 	try {
         await sequelize.authenticate();
         await sequelize.sync();
@@ -65,15 +63,6 @@ const start = async () => {
         console.log('CONNecting to database disconnected failed.', e)
     }
 
-=======
-
-//	try {
-//		await sequelize.authenticate()
-//		await sequelize.sync()
-//	} catch (e) {
-//		console.log("CONNecting to database disconnected failed.")
-//	}
->>>>>>> a5328c47c9c1b60f496ff81b312d553e9e35debd
 
 
 	bot.setMyCommands([
