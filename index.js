@@ -81,6 +81,7 @@ const start = async () => {
 		try {
 			if (text === '/start') {
 				const user = await UserModel.findOne({chatId})
+				const chatIdString = chatId.toString
 
 				if (user.chatId == chatId) {
 					await bot.sendSticker(chatId, 'https://cdn.tlgrm.app/stickers/ccd/a8d/ccda8d5d-d492-4393-8bb7-e33f77c24907/192/1.webp')
