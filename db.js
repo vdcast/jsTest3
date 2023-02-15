@@ -1,7 +1,7 @@
 const {Sequelize} = require("sequelize");
 
 module.exports = new Sequelize(
-	'jsTest',
+	'jsTest4',
 	'doadmin',
 	'AVNS_vEgY7mWLXd6lEG8rTA1',
 	 {
